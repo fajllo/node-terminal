@@ -1,11 +1,10 @@
 const fs = require('fs');
-fs.readdir(".", (err) =>{
+fs.readdir(".", (err,filenames) =>{
     if (err){
         //run some error code
         console.log(err);
         throw new Error(err);
 
-    }else{
-        
     }
+    console.log(filenames);
 });
